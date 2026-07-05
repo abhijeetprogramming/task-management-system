@@ -1,0 +1,29 @@
+{
+  "name": "employee-task-management-system",
+  "version": "1.0.0",
+  "description": "Full Stack Task Management System with React, Node.js, Express, and MySQL",
+  "scripts": {
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "npm run build --prefix frontend",
+    "test": "npm test --prefix backend",
+    "docker-up": "docker-compose up -d",
+    "docker-down": "docker-compose down",
+    "docker-logs": "docker-compose logs -f"
+  },
+  "keywords": [
+    "task-management",
+    "react",
+    "nodejs",
+    "express",
+    "mysql",
+    "jwt"
+  ],
+  "author": "Assignment Submission",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
